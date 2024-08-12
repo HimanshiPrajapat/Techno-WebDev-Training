@@ -1,0 +1,5 @@
+javascript is a :
+single credit-perform only one task at a time.
+dynamically type-we don't need to define the type of variable.
+Synchronous -
+Scripting language- means a interpreting language.
