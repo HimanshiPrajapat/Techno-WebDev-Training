@@ -1,0 +1,38 @@
+Day-1 (42:36)
+online HTML editor 
+1.Froala
+2.Ultra edit
+----
+HTML                 CSS            JAVASCRIPT
+structure/layout     style           logic
+----
+HTML
+Hyper text markup language
+is a code that is used to structure a web page and its content.
+the components used to design the structure of websites are called HTML tags.
+<!--<meta charset="UTF-8">  = Purpose: This tag specifies the character encoding for the HTML document.
+Significance: By declaring charset="UTF-8", you ensure that the browser correctly interprets the character set used in the document. UTF-8 is a widely used encoding that supports almost all characters and symbols in use today, including those from various languages. This helps prevent character display issues, especially when the content includes special characters or non-Latin alphabets.
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"-->  =Purpose: This tag sets the viewport settings for responsive web design.
+Significance: The viewport meta tag controls the layout on mobile browsers. By setting width=device-width, you ensure that the viewport width matches the device's width, which helps your web page display correctly on different screen sizes. The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser. This is crucial for ensuring that the webpage
+is readable and usable on mobile devices, as it prevents the page from being zoomed out too far or too close when first displayed.
+-------
+inspect , responsive(view webpage on diff devices) , <!--content--> -This is to comment(Shortcut-ctrl+/) 
+,Toggle word wrap in command pallet in settings, heading tag (<h1,h2,h3,h4,h5,h6> in decreasing order), paragraph tag(<p></p>)
+----------------------------------------------------------------------------------------------------------------------------------
+
+DAY-2 (1:3:45)
+Anker tag-used to add links to yourpage. <a href="link">heading</a>
+<br> tag -used to 
+relative link/url-- used to link various html files in same folder(<a href="/hello.html">hello<a>)
+absolute link/url-- used to link various html files in another folder(<a href="/hello folder/hello.html">hello<a>)
+
+-------------------------------------------------------------------------------------------------------------------
+Page layout techniques:
+there are two types of tags in html
+Semantic (tags meaning can be fond out from name benefits- Improve readabilty and ranking(sco)) and non-Semantic
+header                                                  Improve user experience                           div
+main
+footer                                                                                 span
+
+

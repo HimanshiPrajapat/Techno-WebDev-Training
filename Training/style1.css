@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3b5998;
+    padding: 10px;
+    color: white;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.login-form {
+    display: flex;
+    align-items: center;
+}
+
+.login-form input {
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.login-form button {
+    padding: 5px 10px;
+    background-color: #4267b2;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.signup-section {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.signup-section h2 {
+    margin-top: 0;
+}
+
+.signup-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-section input,
+.signup-section select {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.signup-section .birthday-select,
+.signup-section .gender-select {
+    display: flex;
+    justify-content: space-between;
+}
+
+.signup-section .birthday-select select,
+.signup-section .gender-select input {
+    width: 32%;
+}
+
+.signup-section button {
+    padding: 10px;
+    background-color: #42b72a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f7f7f7;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #385898;
+    text-decoration: none;
+}

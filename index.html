@@ -1,0 +1,103 @@
+<!DOCTYPE html>   <!--Instruction to the browser about the HTML Version-->
+<html lang="en">
+<head>            <!--Holds the document title -->
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Resume</title>
+</head>
+<!--This is a paragraph.-->
+<body>
+    <h1 align="center">RESUME</h1>
+    <p align="center">I'm a 2nd year B.Tech
+        computer science student
+        passionate about AI and
+        Robotics . Currently
+        looking for prompt
+        engineering internship to
+        build a career in AI.
+        <br>
+        <h2 align="center">Skills</h2>
+        <br>
+        <pre align="center">
+            Web Development - HTML , CSS.
+         Database Management - MySQL.
+         Programming for Problem Solving - C , C++ , Python
+        </pre>
+        <br>
+        <hr>
+        <b text-align="center"><a href="../Education.html" >Education</a></b><!--./means current directory and ../ means a directory outside the current directory-->
+        <br>
+        <hr>
+        <b><a href="./Experience.html" align="center">Experience</a></b>
+        <br>
+        <hr>
+        <b><a href="./projects.html" align="center">Projects</a></b>
+        <p>H<sub>2</sub>O</p>
+        <p>X<sup>2</sup>+Y<sup>2</sup></p>
+        <!--Sementic tag-->
+        <!--<header></header>
+        <main></main>
+        <footer></footer>-->
+        <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita debitis, velit deserunt at reiciendis omnis laborum quam, rerum iste voluptatem neque exercitationem earum distinctio facere esse ducimus sint et odit.</div>         <!--takes the full width of the     screen-->
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, inventore quaerat. Facilis totam dolorem veritatis veniam porro ea ipsam laboriosam? Quaerat ipsum temporibus deserunt! Similique laborum iusto tempore ipsam repudiandae.</span>           <!--takes the area as per the width of content-->
+        <!--ordered and unordered list-->
+        <ul>
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+        </ul>
+        <ol>  <!--element of html starts here-->
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+        </ol>  <!--element of html ends here-->
+        <!--TABLE TAG-->
+        <table border="2px">
+            <thead>
+                <tr>
+                   <th>S.no</th>
+                   <th>Name</th>
+                   <th>Rollno.</th>
+                   <th>Section</th>
+                </tr>
+            </thead>
+            <tbody>
+               <tr>
+                   <td>1</td>
+                   <td>Himanshi</td>
+                   <td>065</td>
+                   <td>A</td>
+               </tr>
+               <tr>
+                <td>2</td>
+                   <td>Jatin</td>
+                   <td>069</td>
+                   <td>B</td>
+               </tr>
+            </tbody>
+        </table>
+    </p>
+    <hr>
+    <!--Void elements-->  
+    <form action="./projects.html">
+     <input type="text" placeholder="Enter Name" name="fullname" value="Himanshi" !disabled>   <!--name attribute used to give identity of text -->
+    <br>
+    <input type="password" placeholder="Enter password">
+    <input type="number" placeholder="Enter number">
+    <br>
+    <input type="file">
+    <br>
+    <input type="email" required placeholder="Enter email">
+    <br>
+    <input type="checkbox" >
+     <span > I do not Agree</span>
+     <br>
+    <input type="radio" >
+    <span>I Agree</span>
+    <br>
+    <input type="date" >
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
+

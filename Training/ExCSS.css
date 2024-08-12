@@ -1,0 +1,24 @@
+#text{
+    background-color: chartreuse;
+}
+.head{
+    /* rgb= (0-255,0-255,0-255,obesity in 0-1) it also has column to select obesity*/
+    /* hash code for color= #eb13bc (in hexadecimal all three pairs of two letter vary from 0-FF)*/
+  background-color: rgb(215, 104, 185);
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+p{
+  text-align: center;
+  padding: 20px;
+} 
+#container{
+    width: 100px;
+    height: 200px;
+    background-color: brown;
+    border: 10px solid black;
+    /* border-radius: 50% ; -> makes a circle*/
+    border-radius: 20 0 0 0;
+    box-shadow: -4px 9px 4px rgba(0,0,0,0.6);;
+}

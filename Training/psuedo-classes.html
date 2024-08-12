@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #google:link{
+            color:blue;
+            background-color: azure;
+        }
+        #google:visited{
+            color:rgb(0, 255, 13);
+            background-color: azure;
+        }
+        #google:active{
+            color:rgb(255, 136, 0);
+            background-color: azure;
+        }
+        #google:hover{
+            color:rgb(255, 0, 170);
+            background-color: rgb(89, 28, 245);
+        }
+        /* ul li:first-child{
+            background-color: aqua;
+        }
+        ul li:last-child{
+            background-color: rgb(0, 255, 98);
+        }
+        ul li:nth-child(4){
+            background-color: rgb(0, 255, 98);
+        } */
+        /* ul li:nth-child(2n){
+            background-color: rgb(0, 255, 98);
+        } */
+        ul li:nth-child(2n+1){
+            background-color: rgb(0, 255, 98);
+        }
+        ::selection{
+            background-color: blanchedalmond;
+            color: blue;
+        }
+        #para::first-letter{
+            background-color: chocolate;
+        }
+        /* It selects the first line in case we
+        consize the text while */
+        #para::first-line{
+            background-color: rgb(252, 209, 15);
+        }
+        #para:hover::before{
+            content:"Hello";
+            background-color: blueviolet;
+            padding:2px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Pseudo classes start with (:)-->
+     <!-- link ,hover, active ,visited ,first child ,last child ,nth child-->
+      <a href="" id="google">Google</a>
+      <a href="" id="Name">Name</a>
+      <ul>
+         <li>Item1</li>
+         <li>Item1</li>
+         <li>Item1</li>
+         <li>Item1</li>
+         <li>Item1</li>
+         <li>Item1</li>
+      </ul>
+       <!-- <ul>
+        <li>Item1</li>
+         <li>Item1</li>
+         <li>Item1</li>
+       </ul> -->
+       <!-- psuedo elements start with (::)-->
+        <!-- 1.selection ,first-letter,first-line, -->
+        <p id="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, odio quis delectus non provident impedit necessitatibus ab natus? Nostrum, quia suscipit? Voluptas modi eius veniam adipisci amet consequuntur doloremque natus?
+        </p>
+
+</body>
+</html>

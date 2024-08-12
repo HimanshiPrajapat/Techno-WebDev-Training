@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <!-- internal css -->
+    <style>
+        /* for id-use "#"" for class- use "." and simply write "element" for element selector*/
+        /* priority order - id -> class -> element */
+        #text{
+              background-color: chartreuse;
+              color:rgb(87, 164, 231);
+              font-size: 20px;
+              font-weight:100;
+              font-style: italic;
+              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+              text-transform: capitalize;
+              text-align: end;
+              text-shadow: 0cqi;
+              text-decoration: double;
+              line-height: 45px;
+              letter-spacing: 0;
+              word-spacing: 4px;
+        }
+        .head{
+            background-color: rgb(215, 104, 185);
+        }
+         p{
+            text-align: center;
+        } 
+        *{
+            background-color: rgb(23, 243, 243);
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- inline css -->
+     <!-- three types of selectors - id , class ,element -->
+    <p style="background-color: aqua;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aperiam perspiciatis omnis, quasi labore nam mollitia. Ad officiis expedita delectus possimus tempore quas ab iste aliquid, ducimus atque praesentium blanditiis?</p>
+    <!-- id is always unique while class can be given to different tags-->
+        <p id="text" class="head">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil dolores beatae quo reprehenderit reiciendis adipisci facilis nisi iure, suscipit blanditiis sit minima similique minus neque eaque voluptates exercitationem provident hic.</p>
+    <p id="main" class="head">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus voluptate nostrum corporis quia! Unde dolorem consequatur molestias voluptas dolorum distinctio vitae sequi similique! Odit error explicabo rem veniam illum ab.
+    </p>
+</body>
+</html>

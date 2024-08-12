@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 3px solid green;
+            height: 300px;
+            /* margin: 20vh; */
+            display :flex;
+            /* align-items: flex-start */
+             /* flex-direction: row;  */
+            /* flex-wrap: wrap; 
+            gap: 10px; */
+            /* flex-flow:row wrap; */
+             /*flex direction ,flex wrap*/
+            justify-content: space-between;
+             /* works along main axis */
+            /* align-items:center; */
+             /*works along cross axis*/
+            /* align-content: space-around; */
+            flex: 1 2 200px;
+            /* grow ,shrink ,flex basis */
+        }
+        .box{
+            /* order- used for particular child whaich ever children has high order it is placed at end */
+            border: 3px solid red;
+            width: 100px;
+            flex-basis: 25%;
+           
+        }
+        #box-1{
+    order:1;
+    /* flex-grow: 1; width badata hai  */
+    flex-shrink: 1;
+    align-self: flex-start; 
+    /* align a particular child */
+        }
+        #box-2{
+            order:2;
+            /* flex-grow: 2; */
+            /* flex-shrink: 2; */
+           
+        }
+        /* posititon = sticky; stick to the position while pages goes up and down */
+    </style>
+</head>
+<body>
+    <!-- .container>.box#box-$(box-$)*10 -->
+    <div class="container">
+        <div class="box" id="box-1">box-1</div>
+        <div class="box" id="box-2">box-2</div>
+        <div class="box" id="box-3">box-3</div>
+        <div class="box" id="box-4">box-4</div>
+        <div class="box" id="box-5">box-5</div>
+        <div class="box" id="box-6">box-6</div>
+        <div class="box" id="box-7">box-7</div>
+    </div>
+
+</body>
+</html>
