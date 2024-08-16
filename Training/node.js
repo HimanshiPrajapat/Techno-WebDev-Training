@@ -142,34 +142,34 @@ console.log("Is the user logged in or admin",isloggedin && isAdmin)  //if 0&&num
 // let pw=+prompt("Enter Password:");
 // username=="Admin" && pw=="123" ? console.log("Auth successfull") : console.log("Auth Failed")
 
-let dayNumber = 3;
-let dayName;
-switch (dayNumber) {
-  case 1:
-    dayName = "Monday";
-  break;
-  case 2:
-    dayName = "Tuesday";
-  break;
-  case 3:
-    dayName = "Wednesday";
-  break;
-  case 4:
-    dayName = "Thrusday";
-  break;
-  case 5:
-    dayName = "Friday";
-  break;
-  case 6:
-    dayName = "Saturday";
-  break;
-  case 7:
-    dayName = "Sunday";
-  break;
-  default:
-    dayName="invalid day number";
-}
-console.log(dayName)
+// let dayNumber = 3;
+// let dayName;
+// switch (dayNumber) {
+//   case 1:
+//     dayName = "Monday";
+//   break;
+//   case 2:
+//     dayName = "Tuesday";
+//   break;
+//   case 3:
+//     dayName = "Wednesday";
+//   break;
+//   case 4:
+//     dayName = "Thrusday";
+//   break;
+//   case 5:
+//     dayName = "Friday";
+//   break;
+//   case 6:
+//     dayName = "Saturday";
+//   break;
+//   case 7:
+//     dayName = "Sunday";
+//   break;
+//   default:
+//     dayName="invalid day number";
+// }
+// console.log(dayName)
 //without break it will execute all cases after the case become true
 
 //Types of defining functions: function declaration ,function expression ,arrow function.
@@ -184,14 +184,14 @@ console.log(dayName)
 // }
 // sum();
  //arrow function 
-let sum =(a,b)=>{
-    console.log("calling sum function by Arrow function "); //most commonly used
-    return(a+b);
-}
-//or if return is single line the use
-//let sum=(a,b)=>a+b
-let add = sum(5,2);
-console.log(add);
+// let sum =(a,b)=>{
+//     console.log("calling sum function by Arrow function "); //most commonly used
+//     return(a+b);
+// }
+// //or if return is single line the use
+// //let sum=(a,b)=>a+b
+// let add = sum(5,2);
+// console.log(add);
 
 //Scopes in js: earlier global/local or functional scope then block scope (rest all curley braces variable has block scope)came
 // var -global scope variable if defined in function act as local never act as block 
@@ -210,29 +210,181 @@ console.log(add);
 // console.log(a);  //shows himanshi 
 
 //array and object
-let arr=[10,20,50,70,80]
-console.log(arr[arr.length-1]); //accessing last element
-let nestedarr= [ 10,20,30,[1,2,3,4],[30,40,50],["aa","bb",[true,false]]];
-let newarr=nestedarr[nestedarr.length-1]
-let newarr1=newarr[newarr.length-1]     
+// let arr=[10,20,50,70,80]
+// console.log(arr[arr.length-1]); //accessing last element
+// let nestedarr= [ 10,20,30,[1,2,3,4],[30,40,50],["aa","bb",[true,false]]];
+// let newarr=nestedarr[nestedarr.length-1]
+// let newarr1=newarr[newarr.length-1]     
 
-console.log(newarr)
-console.log(newarr1[1])  //access the [true,false] last element of nested arr
+// console.log(newarr)
+// console.log(newarr1[1])  //access the [true,false] last element of nested arr
 // console.log(arr.length)
 // arr[arr.length]="Himanshi"
 // console.log(arr)
 // console.log(arr.length)
 
 //objects
-let obj={
-    "Firstname": "Himanshi",      //can be written as variable or string
-    "lastname": "Prajapat"
-}
-console.log(obj.Firstname)
-obj.lastname="jain"
-console.log(obj.lastname)
-obj.section="SID"
-//obj[SID]="12345" //gives the error SID not defined hence we always use key values in square bracket in String only
-obj["SID"]="12345"
-console.log(obj)
+// let obj={
+//     "Firstname": "Himanshi",      //can be written as variable or string
+//     "lastname": "Prajapat"
+// }
+// console.log(obj.Firstname)
+// obj.lastname="jain"
+// console.log(obj.lastname)
+// obj.section="SID"
+// //obj[SID]="12345" //gives the error SID not defined hence we always use key values in square bracket in String only
+// obj["SID"]="12345"
+// console.log(obj)
 
+// -----------------------------------------------------------------Day3-----------------------------------------------------------------------------------
+
+//loops,strict mode ,console types , array methods
+//for ,while ,dowhile
+// let count=11;
+// while(count<=10)
+// {
+//   console.log(count)
+//   count++
+// }
+// do{
+//   console.log(count)
+//   count++
+// }while(count<=5);
+// for(let i=0;i<=10;i++)
+// {
+//   console.log(i)
+// }
+
+//iterating arr elements
+// let arr=[10,20,30,40,50,60,70,80]
+// for(let i=0;i<arr.length;i++)
+// {
+//   console.log(arr[i])
+// }
+
+//for of and for in loop
+let items=["First","Second",3,4,"Fifth"]
+for(let item in items){
+  console.log(item)   //print the elements of items by storing each element in item variable
+}
+
+for(let index in items){
+  console.log(index) //print only index
+  console.log(items[index])
+}
+
+//strict mode - in which javascript workes strictly following methods
+  //globally defining strict mode 
+// "use strict";
+// b=30;
+// let a=20;
+
+// console.log(b)
+
+// function sum(a,a){
+
+//   console.log("Sum function");
+// }
+// sum();
+  
+// //Types of console
+// console.error("This is an error")
+// console.warn("This is a warning")
+// console.assert(10>5,"10 is greater than 5")        //gives output when condition is false
+// console.assert(5>10,"5 is not greater than 10")
+
+// let person={
+//   address:{
+//     city:"jaipur",
+//     pincode: "313003"
+//   },
+//   Hobbies:["Riding","Travelling"]
+// }
+
+// console.dir(person)
+
+// let data =[
+//   {
+//     name:"Himanshi",address:"jaipur" ,dept:"FSD"
+//   },
+//   {
+//      name:"Ashi",address:"Udaipur" ,dept:"CSE"
+//   },
+//   {
+//     name:"Pavan",address:"Ajmer" ,dept:"NIC"
+//  }
+// ]
+// console.table(data)
+
+// console.group("Group")
+// console.log("Message1")
+// console.log("Message2")
+// console.groupEnd()
+
+// console.count("Counter");
+// console.count("Counter");
+// console.count("Counter");
+
+// //array methods
+//let arr=[10,20,30,40,50,60,70,80]
+// let result = arr.push(1000)    ///always asked in interview about all array method that what its returning(checked by storing it in new var and printing it) and whether it is changing something in an array
+
+// console.log(result)
+// console.log(arr)
+
+// console.log(arr.pop())
+// console.log(arr)
+
+// console.log(arr.unshift(1000))     //store on 0th element and return arr length
+// console.log(arr)
+// console.log(arr.shift())
+// console.log(arr)
+
+// let arr1=[10,20];
+// let arr2=[30,40];
+// let result=arr1.concat[arr2];   //do not change arr1,arr2 
+// console.log(result)
+
+// let arr=[10,20,30,40,50,60]
+// let slicearr=arr.slice(2,5);  // return  the last parameter-1 th element 
+// console.log(arr)
+// console.log(slicearr)
+
+// // NOTE: push pop splice shift changes the arr 
+
+// console.log(arr.splice(2,2));  
+// console.log(arr)
+// //add elemnets between arr we use this
+// arr.splice(2,2,"Himanshi"); //add himanshi to second index
+// console.log(arr);
+
+//includes
+// let result= arr.includes(40)  //checks whether the element is present in arr
+// console.log(result)
+
+
+// console.log(arr.reverse())
+//used to change the date format from 2.4.24 to 2-4-24
+// let result=arr.join("techno")   
+// console.log(result)
+
+//for nested arr flat(level) method removes the bracked upto 2 level of nesting
+// let arr1=[[10,20],30,[40,[50,60]]]
+// let result=arr1.flat(2)  
+// console.log(result)
+// console.log(arr1)
+
+//(map ,filter)very imp ,reduce
+ let arr=[10,20,30,40,50,60,70]
+ // syntax: arr.map(()=>{})  <-call back function  
+ let newarr = arr.map((item,i)=>{
+  return item*i
+ })
+
+ console.log(newarr) //length of newarr return by nap method is equal to original arr
+
+ //for each
+ arr.forEach(element => {
+  // return element        doesn't return anything which is the main deffernce between the map and forEach
+  console.log(element)
+ });
