@@ -375,16 +375,125 @@ for(let index in items){
 // console.log(arr1)
 
 //(map ,filter)very imp ,reduce
- let arr=[10,20,30,40,50,60,70]
+ let arr=[10,21,31,43,57,65,79]
  // syntax: arr.map(()=>{})  <-call back function  
- let newarr = arr.map((item,i)=>{
-  return item*i
- })
+//  let newarr = arr.map((item,i)=>{
+//   return item*i
+//  })
 
- console.log(newarr) //length of newarr return by nap method is equal to original arr
+//  console.log(newarr) //length of newarr return by nap method is equal to original arr
 
- //for each
- arr.forEach(element => {
-  // return element        doesn't return anything which is the main deffernce between the map and forEach
-  console.log(element)
- });
+//  //for each
+//  arr.forEach(element => {
+//   // return element        doesn't return anything which is the main deffernce between the map and forEach
+//   console.log(element)
+//  });
+// -----------------------------------------------------------------Day4-----------------------------------------------------------------------------------
+// //filter ->return type= 0-infinite
+//  let filterarr= arr.filter((item)=>(item==20));
+//  console.log(filterarr)
+// // acc- acumulator current value
+//  //reduce
+//  let sum=arr.reduce((acc,current)=> acc+current);
+//  console.log(sum)
+//  //find ->return only one element the first which satisfy the condition
+// let findarr=arr.find((item)=>item>20)
+// console.log(findarr)
+//  //findIndex 
+// let findarrIndex=arr.findIndex((item)=>item>20)
+// console.log(findarrIndex)
+// //some - if there exist some number in arr which satisfy condition it return "True" else it return "False"
+// let arrsome=arr.some((item)=>item%2==0)
+// console.log(arrsome)
+// //every  - if there exist some number in arr which do not satisfy condition it return "False" else it return "True"
+// let arrevery=arr.every((item)=>item%2==0)
+// console.log(arrevery)
+
+// //object constuctor -keys ,values,entries
+// let obj={
+//   Firstname:"Himanshi",
+//   Lastname:"Prajapat"
+// }
+
+// let keys=Object.keys(obj)
+// console.log(keys)
+
+// let values=Object.values(obj)
+// console.log(values)
+
+// let Entries=Object.entries(obj)
+// console.log(Entries)
+// //freeze make the object properties constant
+//  Object.freeze(obj);
+//  obj.Lastname="Khanna"
+// console.log(obj)
+
+// //const -shows error only when manipulating object not the properties defined in object
+// const object1={
+//      Name:"Himanshi",
+//      address:"28,Darjaling"
+// }
+// // object1 ="Kanchan"  - shows an error
+// object1.Name ="Kanchan" //dont show error and it changes the properties
+// console.log(object1)
+
+// //seal : dont allow to add any properties but allow to change the properties
+// Object.seal(obj)
+// object1.Name="Jatin"
+// object1.address="24,Pratabnagar"
+// console.log(object1)
+
+// //hasOwnProperty -if property exist return true else return false
+// console.log(object1.hasOwnProperty("gender"))
+
+// //string methods
+// //charAt
+// let string="Hello World" //indexing start from 0
+// let char=string.charAt(1)
+// console.log(char)
+// //concat
+// let newstr=string.concat(" Techno");
+// console.log(newstr)
+// //includes -case sensitive -return true if a word is within string otherwise false
+// let strincl=string.includes("World");
+// console.log(strincl)
+// //indexOf
+// let strindex=string.indexOf("or");
+// console.log(strindex)
+// //lastIndexOf
+// let lastindex=string.lastIndexOf("l"); //index of last occuring of that letter
+// console.log(lastindex)
+// //slice -if we pass -ve values it returns 
+// let slicestr=string.slice(-1,3)
+// console.log(slicestr)
+// //substring  -but if we pass -ve values it considers the -ve starting index as zero
+// let substr=string.substring(-3,7)
+// console.log(substr)
+// //toLowerCase , toUpperCase
+// let strlow=string.toUpperCase(string)
+// console.log(strlow)
+// let str="Hello   world       "
+// //trimmed - trim all the space from starting and ending not inbetween spaces
+// let trim=str.trim()
+// console.log(trim)
+// // split only used in string === sperate str alfer the first space
+// let splitstr=str.split("") //split()
+// console.log(splitstr)
+// //replace
+// let replacestr =str.replace("World","Techno")
+// console.log(replacestr)
+// //repeat
+// let repeatstr =str.repeat(2)
+// console.log(repeatstr)
+
+//math object
+//methods -random(generate random numbers at every run)
+let num=Math.random();
+console.log(num);
+let num1=10.33534
+console.log(Math.ceil(num1))
+console.log(Math.pow(2,3))
+console.log(Math.sqrt(25))
+//generate a 4-digit OTP
+let num2=Math.floor(1000+Math.random()*9000);   //here range will be 1000-9999//ceil can make 1 number to be a 5 digit 
+console.log(num2);
