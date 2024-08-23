@@ -18,5 +18,5 @@ MyDiv.style.backgroundColor="30px"
 MyDiv.style.border="black 200px"
  console.log(MyDiv.getAttribute('class'));
  console.log(MyDiv.className);
-//MyDiv.setAttribute("id","container")
+MyDiv.setAttribute("id","container") //changes id to container
 console.log(MyDiv)
