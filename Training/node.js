@@ -173,17 +173,17 @@ console.log("Is the user logged in or admin",isloggedin && isAdmin)  //if 0&&num
 //without break it will execute all cases after the case become true
 
 //Types of defining functions: function declaration ,function expression ,arrow function.
-//function declaration 
-// function sum(){
-//     console.log("calling sum function by function ");
-// }
-// sum();
-//function expression 
+//function declaration
+function sum() {
+  console.log("calling sum function by function ");
+}
+sum();
+//function expression
 // const sum =function(){
 //     console.log("calling sum function by function expression");
 // }
 // sum();
- //arrow function 
+//arrow function
 // let sum =(a,b)=>{
 //     console.log("calling sum function by Arrow function "); //most commonly used
 //     return(a+b);
@@ -194,27 +194,27 @@ console.log("Is the user logged in or admin",isloggedin && isAdmin)  //if 0&&num
 // console.log(add);
 
 //Scopes in js: earlier global/local or functional scope then block scope (rest all curley braces variable has block scope)came
-// var -global scope variable if defined in function act as local never act as block 
+// var -global scope variable if defined in function act as local never act as block
 // let & const - block scope variable
 // {
 //     let a =20; //error: a is not defined
 // }
 // console.log(a);
 // {
-//     var a =45;  
+//     var a =45;
 //     console.log(a);   //let treat ar different variables while var doesn't
 // }
 // {
-//     var a="abc" 
+//     var a="abc"
 // }
-// console.log(a);  //shows himanshi 
+// console.log(a);  //shows himanshi
 
 //array and object
 // let arr=[10,20,50,70,80]
 // console.log(arr[arr.length-1]); //accessing last element
 // let nestedarr= [ 10,20,30,[1,2,3,4],[30,40,50],["aa","bb",[true,false]]];
 // let newarr=nestedarr[nestedarr.length-1]
-// let newarr1=newarr[newarr.length-1]     
+// let newarr1=newarr[newarr.length-1]
 
 // console.log(newarr)
 // console.log(newarr1[1])  //access the [true,false] last element of nested arr
@@ -263,18 +263,18 @@ console.log("Is the user logged in or admin",isloggedin && isAdmin)  //if 0&&num
 // }
 
 //for of and for in loop
-let items=["First","Second",3,4,"Fifth"]
-for(let item in items){
-  console.log(item)   //print the elements of items by storing each element in item variable
-}
+// let items=["First","Second",3,4,"Fifth"]
+// for(let item in items){
+//   console.log(item)   //print the elements of items by storing each element in item variable
+// }
 
-for(let index in items){
-  console.log(index) //print only index
-  console.log(items[index])
-}
+// for(let index in items){
+//   console.log(index) //print only index
+//   console.log(items[index])
+// }
 
 //strict mode - in which javascript workes strictly following methods
-  //globally defining strict mode 
+//globally defining strict mode
 // "use strict";
 // b=30;
 // let a=20;
@@ -286,7 +286,7 @@ for(let index in items){
 //   console.log("Sum function");
 // }
 // sum();
-  
+
 // //Types of console
 // console.error("This is an error")
 // console.warn("This is a warning")
@@ -342,17 +342,17 @@ for(let index in items){
 
 // let arr1=[10,20];
 // let arr2=[30,40];
-// let result=arr1.concat[arr2];   //do not change arr1,arr2 
+// let result=arr1.concat[arr2];   //do not change arr1,arr2
 // console.log(result)
 
 // let arr=[10,20,30,40,50,60]
-// let slicearr=arr.slice(2,5);  // return  the last parameter-1 th element 
+// let slicearr=arr.slice(2,5);  // return  the last parameter-1 th element
 // console.log(arr)
 // console.log(slicearr)
 
-// // NOTE: push pop splice shift changes the arr 
+// // NOTE: push pop splice shift changes the arr
 
-// console.log(arr.splice(2,2));  
+// console.log(arr.splice(2,2));
 // console.log(arr)
 // //add elemnets between arr we use this
 // arr.splice(2,2,"Himanshi"); //add himanshi to second index
@@ -362,21 +362,20 @@ for(let index in items){
 // let result= arr.includes(40)  //checks whether the element is present in arr
 // console.log(result)
 
-
 // console.log(arr.reverse())
 //used to change the date format from 2.4.24 to 2-4-24
-// let result=arr.join("techno")   
+// let result=arr.join("techno")
 // console.log(result)
 
 //for nested arr flat(level) method removes the bracked upto 2 level of nesting
 // let arr1=[[10,20],30,[40,[50,60]]]
-// let result=arr1.flat(2)  
+// let result=arr1.flat(2)
 // console.log(result)
 // console.log(arr1)
 
 //(map ,filter)very imp ,reduce
- let arr=[10,21,31,43,57,65,79]
- // syntax: arr.map(()=>{})  <-call back function  
+let arr = [10, 21, 31, 43, 57, 65, 79];
+// syntax: arr.map(()=>{})  <-call back function
 //  let newarr = arr.map((item,i)=>{
 //   return item*i
 //  })
@@ -399,7 +398,7 @@ for(let index in items){
 //  //find ->return only one element the first which satisfy the condition
 // let findarr=arr.find((item)=>item>20)
 // console.log(findarr)
-//  //findIndex 
+//  //findIndex
 // let findarrIndex=arr.findIndex((item)=>item>20)
 // console.log(findarrIndex)
 // //some - if there exist some number in arr which satisfy condition it return "True" else it return "False"
@@ -463,7 +462,7 @@ for(let index in items){
 // //lastIndexOf
 // let lastindex=string.lastIndexOf("l"); //index of last occuring of that letter
 // console.log(lastindex)
-// //slice -if we pass -ve values it returns 
+// //slice -if we pass -ve values it returns
 // let slicestr=string.slice(-1,3)
 // console.log(slicestr)
 // //substring  -but if we pass -ve values it considers the -ve starting index as zero
@@ -488,12 +487,82 @@ for(let index in items){
 
 //math object
 //methods -random(generate random numbers at every run)
-let num=Math.random();
-console.log(num);
-let num1=10.33534
-console.log(Math.ceil(num1))
-console.log(Math.pow(2,3))
-console.log(Math.sqrt(25))
-//generate a 4-digit OTP
-let num2=Math.floor(1000+Math.random()*9000);   //here range will be 1000-9999//ceil can make 1 number to be a 5 digit 
-console.log(num2);
+// let num=Math.random();
+// console.log(num);
+// let num1=10.33534
+// console.log(Math.ceil(num1))
+// console.log(Math.pow(2,3))
+// console.log(Math.sqrt(25))
+// //generate a 4-digit OTP
+// let num2=Math.floor(1000+Math.random()*9000);   //here range will be 1000-9999//ceil can make 1 number to be a 5 digit
+// console.log(num2);
+
+// ---------------------------------------------------day5--------------------------------------------------------------------------------------------
+let date = new Date(); //new keyword represent that it is a constructor
+// console.log(typeof date)
+// console.log(date.getDate());
+// console.log(date.getDay());
+// console.log(date.getTime());//in millisec also used to generate random number as time gone doesn't come again
+// console.log(date.getHours());
+// console.log(date.getMinutes());
+// console.log(date.getSeconds());
+// console.log(date.getMonth());
+// console.log(date.getFullYear());
+// console.log(date.toDateString());
+// console.log(date.toTimeString());
+// console.log(date.toLocaleString());
+// console.log(date.toLocaleDateString());
+// console.log(date.toLocaleTimeString());
+//Destructuring
+// let array=[10,20,30,40]
+// let [n1,n2,,n4] =array;
+// console.log(n1,n2,n4)
+//  let Firstname="Rasjat"
+// //rest operator -> ... = and spread operator ->= ...  used to copy an arr to another
+// let[num , ...newarr]= array  //rest operator
+// console.log(newarr)
+//  //object restructuring
+//  let obj={
+//     Firstname:"Himanshi",
+//     Lastname:"Prajapat",
+//     //address : "12 Sarojini",
+//     gender : "Female"
+//   }
+//   let {Firstname:a ,address="jaipur"}=obj;  //if a variable name already present we rename the variable (:a) to access the obj property
+// console.log(a)
+// let obj1={}
+// obj1["Firstname"] ="xyz"
+// obj1[address]="abc"
+// console.log(obj1);
+// let arr1=[10,20,30,40]
+// let arr2=[10,20,30,40] // result false it takes values from new address of arr2
+// // let arr2=arr1   //result true
+// arr2.push(1000)
+// console.log(arr1===arr2)  //result true
+//reason  -as the refernce datatype takes value from address of arr1
+//due to this problem we use spread operator
+// let arr1=[10,20,30]
+// //let arr2=arr1
+// let arr2=[...arr1]
+// arr2.push(1000)
+// console.log(arr1,arr2)
+// console.log(arr1===arr2)
+
+//FOR array
+let arr1 = [10, 20, 30];
+let arr2 = [40, 50, 60];
+// let arr3=[arr1,arr2,30,40] //nested arr
+let arr3 = [...arr1, ...arr2, 90, 100]; //without nesting arr
+console.log(arr3);
+//FOR object
+let obj1 = {
+  Firstname: "Himanshi",
+  Lastname: "Prajapat",
+};
+let obj2 = {
+  Firstname:"Rename",      //same variable then it replace
+  address: "12 Sarojini",
+  gender: "Female",
+};
+let obj3={...obj1,...obj2,Section:"A"}
+console.log(obj3)
