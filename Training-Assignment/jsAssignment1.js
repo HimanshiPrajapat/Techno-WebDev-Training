@@ -87,43 +87,36 @@ console.log(result);
 // 6. Comparison Operator:
 // Write a function `isGreaterThanFive` that takes a number as an argument and returns `true` if the
 // number is greater than 5, otherwise `false`.
-function isGreaterThanFive(num){
-    if(num>5)
-        return true;
-    else
-        return false;
+function isGreaterThanFive(num) {
+  if (num > 5) return true;
+  else return false;
 }
-console.log(isGreaterThanFive(-10))
+console.log(isGreaterThanFive(-10));
 
 // 7. Logical Operator:
 // Write a function `isBetweenOneAndTen` that takes a number as an argument and returns `true` if
 // the number is between 1 and 10 (inclusive), otherwise `false`.
-function isBetweenOneAndTen(num){
-    if(num>=1 && num<=10)
-    return true
-    else 
-    return false
+function isBetweenOneAndTen(num) {
+  if (num >= 1 && num <= 10) return true;
+  else return false;
 }
-console.log(isGreaterThanFive(10))
+console.log(isGreaterThanFive(10));
 
 // 8. If-Else Statement:
 // Write a function `isEven` that takes a number as an argument and returns "Even" if the number is
 // even, and "Odd" if the number is odd.
-function isEven(num){
-    if(num%2==0)
-        return "Even"
-    else
-     return "Odd"
+function isEven(num) {
+  if (num % 2 == 0) return "Even";
+  else return "Odd";
 }
-console.log(isEven(45))
+console.log(isEven(45));
 // 9. Ternary Operator:
 // Write a function `checkAge` that takes an age as an argument and returns "Adult" if the age is 18
 // or above, and "Minor" if the age is below 18. Implement this using the ternary operator.
-   function checkAge(age)
-   {
-     age>=18? console.log("Adult"):console.log("Minor")
-   }
-   //checkAge(prompt("Enter Age:"));
+function checkAge(age) {
+  age >= 18 ? console.log("Adult") : console.log("Minor");
+}
+//checkAge(prompt("Enter Age:"));
 
 // 10. Switch Statement:
 // Create a function `getDayType` that takes a number (1-7) as an argument and returns:
@@ -131,23 +124,23 @@ console.log(isEven(45))
 // - "Weekday" if the number is between 1 and 5.
 // Use a `switch` statement to implement this logic.
 function getDayType(day) {
-    switch(day) {
-        case 6:
-        case 7:
-            return "Weekend";
-        case 1:
-        case 2:
-        case 3:
-        case 4:
-        case 5:
-            return "Weekday";
-        default:
-            return "Invalid day";  // Handling any number that isn't between 1 and 7
-    }
+  switch (day) {
+    case 6:
+    case 7:
+      return "Weekend";
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+      return "Weekday";
+    default:
+      return "Invalid day"; // Handling any number that isn't between 1 and 7
+  }
 }
 
 // Example usage:
-const day = 6;  // You can change this to test different values
+const day = 6; // You can change this to test different values
 const dayType = getDayType(day);
 console.log(`Day ${day} is a ${dayType}.`);
 
