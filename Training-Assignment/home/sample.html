@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Paragraph Text using DOM</title>
+</head>
+<body>
+
+    <p id="text">This is the original paragraph text.</p>
+    <button id="changeTextButton">Click to Change Text</button>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const button = document.getElementById("changeTextButton");
+            const paragraph = document.getElementById("text");
+
+            button.addEventListener("click", function() {
+                paragraph.innerText = "The paragraph text has been changed!";
+            });
+        });
+    </script>
+
+</body>
+</html>
