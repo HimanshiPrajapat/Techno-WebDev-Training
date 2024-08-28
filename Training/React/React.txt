@@ -1,0 +1,11 @@
+node js is s/w tool to  install application  and run npm packages
+npm is  world's largest software registry. 
+Open source developers from every continent use npm to share and borrow packages, and many organizations use npm to manage private development as well.
+js file me htmlcode likh sakte h - feature of react.js
+react components are the js code that return html functions
+.jsx - full form - javascriptxml or extention (code written in return function )
+reat app made from vite doesn't support .js only support .jsx
+write code in react only in src folder
+file and function name should be same
+you can only return one element at a time <div><h1></h1> <h2></h2><div>
+<></>- react fregments 
