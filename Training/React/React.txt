@@ -9,3 +9,7 @@ write code in react only in src folder
 file and function name should be same
 you can only return one element at a time <div><h1></h1> <h2></h2><div>
 <></>- react fregments 
+package.json file is very important as its manipulation may make the application dead
+in this file we have dependencies object : in which all packages installed is present
+pakage-lock.json file and node_module folder is not nessary to be shared as it can be created automatically by running command: npm i or npm install
+for particular 

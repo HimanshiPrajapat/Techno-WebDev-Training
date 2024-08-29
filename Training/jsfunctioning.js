@@ -103,7 +103,7 @@
 //         };
 //         return resolve(data);
 //     }
-// )   //cunstructor function which accepts callbacks
+// )   //constructor function which accepts callbacks
 // }
 
 // let dataFetched=fetchData();

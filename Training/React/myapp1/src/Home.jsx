@@ -1,12 +1,9 @@
-function Home(){
-    return(
-        // <h1>Home</h1>
-        // <h2></h2>
-        <div>
-            <h1>Home</h1>
-            <h2>Page</h2>
-        </div>
-        
-    )
+import React from 'react'
+
+const Home = () => {
+  return (
+    <div>Home</div>
+  )
 }
+
 export default Home
