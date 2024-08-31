@@ -1,17 +1,12 @@
 import React from 'react'
+import Child1 from './Child1'
 
 const Child = ({count , setCount}) => {
   return (
-    <div className='text-2xl bg-green-200 p-5 m-5'>
-        Child 1
-        <p className='text-xl'>The Value of count inside Child : {count}</p>
-        <button className="bg-slate-700 text-white p-2 m-4 active:bg-slate-400 active:shadow-inner" onClick={()=>{
-       setCount(count-1);
-      }}>Dec Count(-)</button>
-      <button className="bg-slate-700 text-white p-2 m-4 active:bg-slate-400 active:shadow-inner" onClick={()=>{
-        setCount(count+1);
-      }}>Inc Count(+)</button>
-    </div> 
+    <div className='bg-orange-300 w-4/5 h-4/5 text-3xl flex flex-col justify-center items-center'>
+      Child
+      <Child1 count={count} setCount={setCount} />
+    </div>
   )
 }
 
