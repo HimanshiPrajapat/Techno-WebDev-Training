@@ -255,18 +255,41 @@
 // Deliverables:
 // A React component that fetches product data from the API and displays it in a series of cards. The
 // card layout should be visually structured and responsive.
+// ---------------------------------------------------------------------------------------------------------------------------------------------------
+// import React from 'react';
+// import ProductCardList from './ProductCardList';
+
+
+// const App = () => {
+  
+//   return (
+//     <div className="App">
+//       <h1>Product List</h1>
+//       <ProductCardList />
+//     </div>
+//   );
+// };
+
+// export default App;
 
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { ProductProvider } from './ProductContext';
 import ProductCardList from './ProductCardList';
-
+import ProductDetails from './ProductDetails'; // This component would display details of a single product
 
 const App = () => {
-  
   return (
-    <div className="App">
-      <h1>Product List</h1>
-      <ProductCardList />
-    </div>
+    <ProductProvider>
+      <Router>
+        <div className="App">
+          <Routes>
+            <Route path="/" element={<ProductCardList />} />
+            <Route path="/product/:id" element={<ProductDetails />} />
+          </Routes>
+        </div>
+      </Router>
+    </ProductProvider>
   );
 };
 
