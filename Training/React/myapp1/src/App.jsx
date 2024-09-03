@@ -12,6 +12,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Signup from "./Signup"
 import Home from "./Home"
 import Navbar from "./Navbar"
+import Router from "./router/Router"
+import Callback from "./Callback"
+import Memo from "./Memo"
 
 const data = [
   {
@@ -66,26 +69,25 @@ const data = [
 
 function App() {
 
-  // useState
-  const [count , setCount ] = useState(0);
-  const [productId , setProductId] = useState(1);
-  const { setCountValue } = useContext(CountContext);
-  const [apiData , setApiData] = useState([]);
-  const [loading , setLoading] = useState(false);
+  // // useState
+  // const [count , setCount ] = useState(0);
+  // const [productId , setProductId] = useState(1);
+  // const { setCountValue } = useContext(CountContext);
+  // const [apiData , setApiData] = useState([]);
+  // const [loading , setLoading] = useState(false);
 
-  const fetchData = async ()=>{
-    setLoading(true);
-    try {
-      const response = await fetch(`https://fakestoreapi.com/products`);
-      const data = await response.json();
-      console.log(data);
-      setApiData(data);
-      setLoading(false);
-    } catch (error) {
-      console.log(error)
-      setLoading(false);
-    }
-  }
+  // const fetchData = async ()=>{
+  //   setLoading(true);
+  //   try {
+  //     const response = await fetch(`https://fakestoreapi.com/products`);
+  //     const data = await response.json();
+  //     console.log(data);
+  //     setApiData(data);
+  //     setLoading(false);
+  //   } catch (error) {
+  //     console.log(error)
+  //     setLoading(false);
+  //   }}
 
   // useEffect
 
@@ -104,13 +106,17 @@ function App() {
 
 return (
     <div className="w-full">
-      <Navbar />
- 
+      <Memo/>
+      {/* <Callback/> */}
+      {/* <Reducer/> */}
+       {/* <Router/> */}
+      {/* <Navbar />
+          
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-      </Routes>
+      </Routes> */}
       {/* <p className="text-3xl text-white">App</p>
       <button className="p-2 border-2 text-gray-200 active:bg-gray-200 active:text-gray-700" onClick={()=>{setCountValue((prev)=>prev+1)}}>Update Count Value</button> */}
       {/* <Child count={count} setCount={setCount} /> */}
