@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import CircularProgress from '@mui/material/CircularProgress';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
     const [email , setEmail] = useState("");
     const [password , setPassword] = useState("");
     const [loading , setLoading] = useState(false);
+
+    const navigate = useNavigate();
 
     const handleSubmit = (e)=>{
         e.preventDefault();
@@ -16,7 +19,8 @@ const Login = () => {
             });
             setLoading(false);
             alert(`${email} Logged-In`);
-            
+            navigate("/");
+
         },5000);
     }
   return (
@@ -35,5 +39,4 @@ const Login = () => {
    </div>
   )
 }
-
 export default Login

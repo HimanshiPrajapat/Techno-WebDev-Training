@@ -15,6 +15,7 @@ import Navbar from "./Navbar"
 import Router from "./router/Router"
 import Callback from "./Callback"
 import Memo from "./Memo"
+import Ref from "./Ref"
 
 const data = [
   {
@@ -91,11 +92,11 @@ function App() {
 
   // useEffect
 
-  useEffect(()=>{
-    // fetchData();
-    // console.log(count)
-    // setCount(prev=>prev+1)
-  },[]);
+  // useEffect(()=>{
+  //   // fetchData();
+  //   // console.log(count)
+  //   // setCount(prev=>prev+1)
+  // },[]);
 
   // if(loading){
   //   return (
@@ -104,15 +105,17 @@ function App() {
   // }
 
 
-return (
+  return (
     <div className="w-full">
-      <Memo/>
-      {/* <Callback/> */}
-      {/* <Reducer/> */}
-       {/* <Router/> */}
-      {/* <Navbar />
-          
-      <Routes>
+      <Navbar />
+      {/* <Reducer /> */}
+      {/* <Callback /> */}
+      <Memo />
+      <Ref />
+      {/* <RouterProvider router={Router} /> */}
+      {/* <Ref /> */}
+      <RouterProvider router={Router} />
+      {/* <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
@@ -147,5 +150,4 @@ return (
       </div>
   )
 }
-
 export default App
