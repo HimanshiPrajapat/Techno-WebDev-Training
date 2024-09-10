@@ -1,4 +1,6 @@
 const express= require("express");
+const userRouters=require("./router/user")
+const productRouters=require("./router/product")
 const app= express();            //is in the form of function that returns object with several method
 app.use(express.json());       //used as middleware to convert data into json to display it
 
@@ -20,6 +22,8 @@ const middleWare2=(req,res,next)=>{
     next();
    }
 app.use(middleWare1);
+app.use("/api",userRouters);  //http://localhost:3000/api
+app.use("/prod",productRouters);
 
 const port =3000;
 // app.get("/",(req,res)=>{
@@ -44,4 +48,4 @@ app.listen(port, () => {
   });
 
 
-//MVC architechture next  html to react test on monday
+//MVC architechture -Model , view , controller
