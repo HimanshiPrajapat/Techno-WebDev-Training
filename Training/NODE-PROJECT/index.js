@@ -1,16 +1,18 @@
 const express= require("express");
-const userRouters=require("./router/user")
+
 const productRouters=require("./router/product")
+const connectDb=require("./config/db");
+const userRouters=require("./router/user")
 const app= express();            //is in the form of function that returns object with several method
 app.use(express.json());       //used as middleware to convert data into json to display it
-
+connectDb();
 const users=[
     {
         "Username":"Himanshi",
         "Email":"Himanshi@123",
         "contactNo":"323567586"
     }
-]
+]   
 const middleWare1=(req,res,next)=>{
  console.log("MiddleWare 1 called");
 //  res.send({message : "Unauthorized"})
@@ -25,7 +27,7 @@ app.use(middleWare1);
 app.use("/api",userRouters);  //http://localhost:3000/api
 app.use("/prod",productRouters);
 
-const port =3000;
+// const port =3000;
 // app.get("/",(req,res)=>{
 //     res.send("Hello from / Route")
 // });
@@ -43,8 +45,8 @@ app.post("/createUser",middleWare2,(req,res)=>{  //http://localhost:5500/createU
 //     console.log("server is running on 5500")
 // })
 
-app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`);
+app.listen(3000, () => {
+    console.log(`Example app listening at http://localhost:3000`);
   });
 
 
