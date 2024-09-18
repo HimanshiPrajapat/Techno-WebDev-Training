@@ -12,3 +12,7 @@ router.put("/user/:id",usercontroller.updateUsers);
 router.delete("/user/:id",usercontroller.deleteUsers);
 
 module.exports = router;
+
+//noSQL - not only structured query language
+//data stored in json object form
+//mostly used in commercial DB where data comes in different patterns
